@@ -84,24 +84,25 @@ select {
 }
 
 .row {
-  margin: 0 auto;
   display: flex;
   padding: 90px 0;
   max-width: 1218px;
+  flex: 1;
 }
 
 .link-block {
-  min-width: 418px;
+  min-width: 30%;
   height: 266px;
   margin: 121px 90px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(3px 4px 30px rgba(0, 0, 0, 0.41));
   cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 1;
 }
 
-
 .haze {
-  background: url('assets/haze.svg') no-repeat;
-  background-size: cover;
+  background-image: url('assets/haze.svg');
 }
 
 .divider {
@@ -112,8 +113,7 @@ select {
 }
 
 .bar {
-  background: url('assets/bar.svg') no-repeat;
-  background-size: cover;
+  background-image: url('assets/bar.svg');
 }
 
 .haze:hover {
